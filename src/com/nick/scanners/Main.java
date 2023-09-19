@@ -5,18 +5,40 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        boolean isPlaying = true;
+
         do {
-            System.out.println("Did this run once?");
-        } while (false);
+            int result = scannerNumber();
+
+            if (result > 1000){
+                isPlaying = false;
+            
+            for (int i = 0; i < result; i++) {
+                System.out.println(i);
+                System.out.println("Looping");
+
+            }
+
+            }
+
+        } while (isPlaying);
 
     }
+    public static int scannerNumber() {
 
-    public static void scanner() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Insert a number");
+
+        return sc.nextInt();
+    }
+    public static String scannerText() {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Insert text: ");
-        sc.nextLine();
+        String input = sc.nextLine();
 
+        return input;
     }
 
 
