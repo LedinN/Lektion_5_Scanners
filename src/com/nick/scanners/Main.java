@@ -10,16 +10,16 @@ public class Main {
         do {
             int result = scannerNumber();
 
-            if (result > 1000){
+            if (result > 1000) {
                 isPlaying = false;
-            
+                break;
+            }
             for (int i = 0; i < result; i++) {
                 System.out.println(i);
                 System.out.println("Looping");
 
             }
-
-            }
+            
 
         } while (isPlaying);
 
